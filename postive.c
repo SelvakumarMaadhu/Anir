@@ -2,17 +2,14 @@
 #include<conio.h>
 void main()
 {
-  int n;
-  printf("Enter the number");
-  scanf("%d",&n);
-if(n<=0)
-{
-if(n==0)
-{
-printf("the number is zero");
+  int a,b,c;
+  printf("Enter the three numbers");
+  scanf("%d%d%d",&a,&b,&c);
+if(a>b && a>c)
+  printf("The largest number is %d",a);
+else if(b>c)
+printf("The largest number is %d",b");
 else
-printf("the number is Negative");
-}
-else
-printf("the number is positive");
-}
+printf("The largest number is %d",c);
+            getch();
+       }
